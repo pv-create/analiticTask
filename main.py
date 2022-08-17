@@ -7,6 +7,7 @@ StudentsPerfomance = pd.read_csv('StudentsPerformance.csv')
 # print(StudentsPerfomance.describe())
 # print(StudentsPerfomance.dtypes)
 # print(StudentsPerfomance.groupby('gender').aggregate({'writing score' : 'mean'}))
+print(StudentsPerfomance.query("gender == 'female'"))
 
 # print(StudentsPerfomance.size)
 # print(StudentsPerfomance.loc[StudentsPerfomance.gender == 'female'])
